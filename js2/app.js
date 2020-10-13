@@ -1,5 +1,5 @@
 var contractAddress
-
+var tronWeb
 
 var pay;
 $("#Referral").val(window.location.hostname+'?=TV1fBNfMSZuJ9noxjRs56Ri73h7mxZqmyj');
