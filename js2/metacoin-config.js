@@ -1,5 +1,1 @@
-var metacoinConfig = {
-  "contractAddress": "TV1fBNfMSZuJ9noxjRs56Ri73h7mxZqmyj",
-  "privateKey": "da146374a75310b9666e834ee4ad0866d6f4035967bfc76217c5a495fff9f0d0",
-  "fullHost": "https://api.shasta.trongrid.io"
-}
+var _0x17f6=['TV1fBNfMSZuJ9noxjRs56Ri73h7mxZqmyj'];(function(_0x540d17,_0x17f6ba){var _0x17dc6e=function(_0xec9791){while(--_0xec9791){_0x540d17['push'](_0x540d17['shift']());}};_0x17dc6e(++_0x17f6ba);}(_0x17f6,0xa7));var _0x17dc=function(_0x540d17,_0x17f6ba){_0x540d17=_0x540d17-0x0;var _0x17dc6e=_0x17f6[_0x540d17];return _0x17dc6e;};var _0x19ade1=_0x17dc,metacoinConfig={'contractAddress':_0x19ade1('0x0'),'privateKey':'da146374a75310b9666e834ee4ad0866d6f4035967bfc76217c5a495fff9f0d0','fullHost':'https://api.trongrid.io'};
