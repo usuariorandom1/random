@@ -41,7 +41,7 @@ function getParameterByName(name) {
 //   document.execCommand("copy");
 //   $temp.remove();
 // }
-$("#Referral").val(window.location.hostname+'?ref=TV1fBNfMSZuJ9noxjRs56Ri73h7mxZqmyj');
+$("#Referral").val(window.location.hostname+'?ref=TP44jH8RoyinS35SV951a9Atd6h6qngP2g');
 
 App = {
   tronWebProvider: null,
