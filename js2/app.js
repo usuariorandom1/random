@@ -399,14 +399,17 @@ App = {
 
 	    $("#profit").text(payuser);
 
-	    if(address == '') {
-		  var locat = window.location+'?ref=';
-		  $("#Referral").val(locat);
-		}
-	    else{
-	      var locat = window.location.hostname+'?ref='+address;
-	      $("#Referral").val(locat);
-	    }
+	    var referido = getParameterByName('ref');
+	    var locat = window.location+'?ref=';
+	    $("#Referral").val(locat);
+	 //    if(address == '') {
+		//   var locat = window.location+'?ref=';
+		//   $("#Referral").val(locat);
+		// }
+	 //    else{
+	 //      var locat = window.location.hostname+'?ref='+address;
+	 //      $("#Referral").val(locat);
+	 //    }
     //}
     
     this.accounts
@@ -465,17 +468,19 @@ App = {
       $("#profit").text(payuser);
 
 	    var referido = getParameterByName('ref');
-		if(address == '') {
-		  var locat = window.location+'?ref=';
-		  $("#Referral").val(locat);
-		}
-	    else{
-	      var locat = window.location.hostname+'?ref='+address;
-	      $("#Referral").val(locat);
-	    }
+	    var locat = window.location+'?ref=';
+	    $("#Referral").val(locat);
+		// if(address == '') {
+		//   var locat = window.location+'?ref=';
+		//   $("#Referral").val(locat);
+		// }
+	 //    else{
+	 //      var locat = window.location.hostname+'?ref='+address;
+	 //      $("#Referral").val(locat);
+	 //    }
     }
     
-    setInterval(refrescar, 8000);
+    setInterval(refrescar, 3000);
     
   },
 
