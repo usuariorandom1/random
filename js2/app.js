@@ -468,7 +468,7 @@ App = {
 		}
     }
     
-    setInterval(refrescar, 3000);
+    setInterval(refrescar, 5000);
     
   },
 
