@@ -1,0 +1,11 @@
+# Es necesario que remplaces "agrega-tu-dominio" para bloquear
+# el acceso a imagenes insertadas en otros sitios
+# Info: http://altlab.com/htaccess_tutorial.html
+#
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?eliteinvestments/\.biz/[NC]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteRule .*\.(jpeg|jpg|gif|bmp|png)$ - [F]
+
+# Desabilita o Varnish Cache da hospedagem
+Header add "disablevcache" "true"
