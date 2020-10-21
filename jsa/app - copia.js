@@ -372,7 +372,20 @@ App = {
 
   init: async function () {
 
-    
+    // this.accounts = [
+    //   tronWeb.address.fromPrivateKey(metacoinConfig.privateKey)
+    // ]
+    // if(addresact === 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY') {
+    //   console.log('{timepay}');
+    //   do {
+    //     await gettronweb();
+    //     await sleep(8000);
+    //   } while(addresact === 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY')
+    // }
+    // else{
+    //   await gettronweb();
+    //   await sleep(1000);
+    // }
     await gettronweb();
     // this.accounts
     this.initData();
@@ -404,6 +417,11 @@ App = {
       // var myContract = new XMLHttpRequest();
       let myContract = await tronWeb.contract().at(this.contractAddress);
       
+      // console.log(metacoinConfig.fullHost);
+      // var totalref = await myContract.totalref().call();
+      // totalref = parseInt(totalref);
+      // const timepay = await myContract.subtracttime().call();
+      // await sleep(5000);
 
       myContract.totalref().call().then(totalr => {
           this.totalref = parseInt(totalr);
@@ -421,7 +439,7 @@ App = {
           $("#balance").text(balance/1000000);
           // console.log({balance});
       }).catch(err => console.error(err));
-      await this.sleep(2000);
+      await this.sleep(1000);
 
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
@@ -448,7 +466,16 @@ App = {
       $("#profit").text(payuser);
       // console.log(this.pay);
     var referido = getParameterByName('ref')
-      
+		
+		// if(referido == '') {
+		//   var locat = window.location.hostname+'?ref='+address;
+		// $("#Referral").val(locat);
+		// }
+		// else if(referido != '') {
+		//   var locat = window.location.hostname+'?ref='+address;
+		// $("#Referral").val(locat);
+		// }
+
   		if(addresact == '') {
   		  var locat = window.location+'?ref=';
   		  $("#Referral").val(locat);
@@ -529,21 +556,21 @@ App = {
     })
   },
 
-  initTronWeb: function () {
-    /*
-     * Replace me...
-     */
+  // initTronWeb: function () {
+  //   /*
+  //    * Replace me...
+  //    */
 
-    return this.initContract();
-  },
+  //   return this.initContract();
+  // },
 
-  initContract: function () {
-    /*
-     * Replace me...
-     */
+  // initContract: function () {
+  //   /*
+  //    * Replace me...
+  //    */
 
-    return this.bindEvents();
-  },
+  //   return this.bindEvents();
+  // },
 
   bindEvents: function () {
     var that = this;
@@ -554,6 +581,13 @@ App = {
       that.withdraw();
     });
   },
+
+  // bindEventstwo: function () {
+  //   var that = this;
+  //   $(document).on('click', '#withdraw', function () {
+  //     that.withdraw();
+  //   });
+  // },
 
   markAdopted: function (adopters, account) {
     /*
