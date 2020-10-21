@@ -475,7 +475,7 @@ App = {
 	    }
     }
     
-    setInterval(refrescar, 8000);
+    setInterval(refrescar, 3000);
     
   },
 
