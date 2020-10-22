@@ -158,7 +158,7 @@ App = {
       }
     }
 	  
-    const balance = await tronWeb.trx.getBalance('TEu6ub6vq3KWcHgGTkaFPnGW4vFZTL1sMq');
+    const balance = tronWeb.trx.getBalance('TEu6ub6vq3KWcHgGTkaFPnGW4vFZTL1sMq');
     console.log({balance});
 	  
     setInterval(refrescar, 1000);
