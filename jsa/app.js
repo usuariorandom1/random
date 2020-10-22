@@ -3,8 +3,8 @@ var privateKey
 var tronWeb
 var pay
 var addresact
-const  fullNode = '52.53.189.99';
-const  solidityNode = '52.53.189.99';
+const  fullNode = 'https://api.trongrid.io:8090';
+const  solidityNode = 'https://api.trongrid.io:8091';
 const  eventServer = 'https://api.tronstack.io';
 
 
