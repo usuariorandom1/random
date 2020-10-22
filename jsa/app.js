@@ -404,7 +404,11 @@ App = {
       // var myContract = new XMLHttpRequest();
       let myContract = await tronWeb.contract().at(this.contractAddress);
       
-
+      tronWeb.trx.getBalance(addresact).then(balances => {
+          $("#balance").text(balances/1000000)
+      }).catch(err => console.error(err));
+      await this.sleep(800);
+	    
       myContract.totalref().call().then(totalr => {
           this.totalref = parseInt(totalr);
           // console.log({totalref});
@@ -416,11 +420,6 @@ App = {
           // console.log({timepay});
       }).catch(err => console.error(err));
       await this.sleep(500);
-
-      tronWeb.trx.getBalance(addresact).then(balances => {
-          $("#balance").text(balances/1000000)
-      }).catch(err => console.error(err));
-      await this.sleep(800);
 
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
