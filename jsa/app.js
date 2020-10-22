@@ -123,7 +123,7 @@ App = {
 	  sleep(1000);
           _balance = parseInt(_balance.balance);
           _balance = _balance/1000000;
-          jQuery.("#balances").text(_balance);
+          $("#balances").text(_balance);
       }).catch(err => console.error(err));
 	    
       myContract.withdrawn().call().then(withdrawn => {
