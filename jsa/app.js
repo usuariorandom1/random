@@ -51,11 +51,6 @@ async function gettronweb(){
       this.addresact = localStorage.address;
     }
   }
-  await tronWeb.trx.getBalance(addresact).then(result => {
-        this.result = result/1000000;
-        $("#balances").text(this.result)
-        console.log(result)
-      })
 }
 
 function sleep(ms) {
