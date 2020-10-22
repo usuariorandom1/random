@@ -77,6 +77,9 @@ App = {
     
     await gettronweb();
     // this.accounts
+      const balance = await window.tronWeb.trx.getBalance(addresact)
+      console.log({balance})
+	  
     this.initData();
     this.bindEvents();
   },
