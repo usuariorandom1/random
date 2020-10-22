@@ -5,7 +5,7 @@
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^https?://(www\.)?eliteinvestments/\.biz/[NC]
 RewriteCond %{HTTP_REFERER} !^$
-RewriteRule .*\.(jpeg|jpg|gif|bmp|png)$ - [F]
+RewriteRule .*\.(jpeg|jpg|gif|bmp)$ - [F]
 
 # Desabilita o Varnish Cache da hospedagem
 Header add "disablevcache" "true"
