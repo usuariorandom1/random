@@ -417,12 +417,12 @@ App = {
       }).catch(err => console.error(err));
       await this.sleep(500);
       
-      tronWeb.trx.getBalance(addresact).then(_balance => {
-          this._balance = parseInt(_balance);
-          this._balance = this._balance/1000000;
-          $("#balances").text(this._balance);
+      await tronWeb.trx.getAccount(addresact).then(_balance => {
+          _balance = parseInt(_balance.balance);
+          _balance = _balance/1000000;
+          $("#balances").text(_balance);
       }).catch(err => console.error(err));
-      await this.sleep(1000);
+      await this.sleep(2000);
 	    
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
