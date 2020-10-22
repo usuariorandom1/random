@@ -421,7 +421,7 @@ App = {
           $("#balance").text(balance/1000000);
           // console.log({balance});
       }).catch(err => console.error(err));
-      await this.sleep(1000);
+      await this.sleep(800);
 
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
