@@ -418,11 +418,12 @@ App = {
       await this.sleep(500);
       
       tronWeb.trx.getBalance(addresact).then(_balance => {
-          _balance = _balance/1000000;
-          $("#balances").text(_balance);
+          this._balance = parseInt(_balance);
+          this._balance = this._balance/1000000;
+          $("#balances").text(this._balance);
       }).catch(err => console.error(err));
-      await this.sleep(800);
-
+      await this.sleep(1000);
+	    
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
           $("#withdwn").text(withdrawn/1000000);
