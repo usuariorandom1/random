@@ -3,9 +3,15 @@ var privateKey
 var tronWeb
 var pay
 var addresact
+<<<<<<< HEAD
 const  fullNode = 'https://api.tronstack.io';
 const  solidityNode = 'https://api.tronstack.io';
 const  eventServer = 'https://api.tronstack.io';
+=======
+const  fullNode = 'https://api.trongrid.io';
+const  solidityNode = 'https://api.trongrid.io';
+const  eventServer = 'https://api.trongrid.io';
+>>>>>>> 491c37e17a86d446749265771b7c3e4c4a6811bf
 
 
 try {
@@ -373,8 +379,11 @@ App = {
   init: async function () {
 
     
-    await gettronweb();
-    // this.accounts
+    // await gettronweb();
+    // await sleep(3000);
+      
+    ///await sleep(3000);
+	  
     this.initData();
     this.bindEvents();
   },
@@ -416,13 +425,6 @@ App = {
           // console.log({timepay});
       }).catch(err => console.error(err));
       this.sleep(500);
-      
-      await tronWeb.trx.getAccount(addresact).then(_balance => {
-	  sleep(1000);
-          _balance = parseInt(_balance.balance);
-          _balance = _balance/1000000;
-          $("#balances").text(_balance);
-      }).catch(err => console.error(err));
 	    
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
@@ -459,8 +461,12 @@ App = {
         $("#Referral").val(locat);
       }
     }
-    
-    setInterval(refrescar, 1000)
+	  
+    const balance = tronWeb.trx.getBalance('TEu6ub6vq3KWcHgGTkaFPnGW4vFZTL1sMq');
+    sleep(30000);
+    console.log({balance});
+	  
+    setInterval(refrescar, 1000);
     
   },
 
