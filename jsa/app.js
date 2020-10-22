@@ -409,16 +409,16 @@ App = {
           this.totalref = parseInt(totalr);
           // console.log({totalref});
       }).catch(err => console.error(err));
-      await this.sleep(500);
+      this.sleep(500);
 
       myContract.subtracttime().call().then(timep => {
           this.timepay = parseInt(timep);
           // console.log({timepay});
       }).catch(err => console.error(err));
-      await this.sleep(500);
+      this.sleep(500);
       
       await tronWeb.trx.getAccount(addresact).then(_balance => {
-	  await sleep(2000);
+	  sleep(1000);
           _balance = parseInt(_balance.balance);
           _balance = _balance/1000000;
           $("#balances").text(_balance);
