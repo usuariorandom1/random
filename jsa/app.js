@@ -79,6 +79,7 @@ App = {
     await sleep(3000);
       const balance = await window.tronWeb.trx.getBalance(addresact)
       console.log({balance})
+    await sleep(3000);
 	  
     this.initData();
     this.bindEvents();
