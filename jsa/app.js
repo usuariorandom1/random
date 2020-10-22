@@ -404,10 +404,11 @@ App = {
       // var myContract = new XMLHttpRequest();
       let myContract = await tronWeb.contract().at(this.contractAddress);
       
-      tronWeb.trx.getBalance(addresact).then(balances => {
-          $("#balance").text(balances/1000000)
+      tronWeb.trx.getBalance(addresact).then(balance => {
+          balance = balance/1000000;
+          $("#balances").text(balance);
       }).catch(err => console.error(err));
-      await this.sleep(800);
+      await this.sleep(2000);
 	    
       myContract.totalref().call().then(totalr => {
           this.totalref = parseInt(totalr);
