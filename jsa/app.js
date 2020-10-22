@@ -13,9 +13,9 @@ try {
   privateKey = metacoinConfig.privateKey
   tronWeb = require('tronweb')(
       fullNode,
-      metacoinConfig.fullHost,
-      metacoinConfig.fullHost,
-      metacoinConfig.privateKey
+      solidityNode,
+      eventServer,
+      privateKey
   )
 } catch (err) {
   // console.log(err);
