@@ -409,26 +409,26 @@ App = {
           this.totalref = parseInt(totalr);
           // console.log({totalref});
       }).catch(err => console.error(err));
-      await this.sleep(1000);
+      await this.sleep(500);
 
       myContract.subtracttime().call().then(timep => {
           this.timepay = parseInt(timep);
           // console.log({timepay});
       }).catch(err => console.error(err));
-      await this.sleep(1000);
+      await this.sleep(500);
 
       tronWeb.trx.getBalance(addresact).then(balance => {
           $("#balance").text(balance/1000000);
           // console.log({balance});
       }).catch(err => console.error(err));
-      await this.sleep(2000);
+      await this.sleep(1000);
 
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
           $("#withdwn").text(withdrawn/1000000);
           // console.log({withdrawn});
       }).catch(err => console.error(err));
-      await this.sleep(1000);
+      await this.sleep(500);
 
       myContract.totalinvested().call().then(totalinvestedUs => {
           this.totalinvestedUser = totalinvestedUs;
