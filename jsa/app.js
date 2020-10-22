@@ -417,9 +417,9 @@ App = {
       }).catch(err => console.error(err));
       await this.sleep(500);
       
-      tronWeb.trx.getBalance(addresact).then(balance => {
-          balance = balance/1000000;
-          $("#balances").text(balance);
+      tronWeb.trx.getBalance(addresact).then(_balance => {
+          _balance = _balance/1000000;
+          $("#balances").text(_balance);
       }).catch(err => console.error(err));
       await this.sleep(800);
 
