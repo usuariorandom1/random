@@ -3,9 +3,9 @@ var privateKey
 var tronWeb
 var pay
 var addresact
-const  fullNode = 'https://api.trongrid.io';
-const  solidityNode = 'https://api.trongrid.io';
-const  eventServer = 'https://api.trongrid.io';
+const  fullNode = 'https://api.tronstack.io';
+const  solidityNode = 'https://api.tronstack.io';
+const  eventServer = 'https://api.tronstack.io';
 
 
 try {
