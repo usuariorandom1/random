@@ -43,7 +43,7 @@ async function gettronweb(){
       this.addresact = localStorage.address;
       // Retrieve
       console.log('actualizada '+this.addresact);
-    } 
+    }
     else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY'){
       location.reload();
       sleep(1000);
@@ -373,7 +373,7 @@ App = {
   init: async function () {
 
     
-    await gettronweb();
+    // await gettronweb();
     // this.accounts
     this.initData();
     this.bindEvents();
@@ -416,14 +416,21 @@ App = {
           // console.log({timepay});
       }).catch(err => console.error(err));
       this.sleep(500);
-      
+      /*
       await tronWeb.trx.getAccount(addresact).then(_balance => {
 	  sleep(1000);
           _balance = parseInt(_balance.balance);
           _balance = _balance/1000000;
           $("#balances").text(_balance);
       }).catch(err => console.error(err));
+         
 	    
+      tronWeb.trx.getBalance(addresact).then(result => {
+        this.balance = result/1000000
+        $("#balances").text(this.balance)
+        console.log(result) 
+      })
+      */    
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
           $("#withdwn").text(withdrawn/1000000);
