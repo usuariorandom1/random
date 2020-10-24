@@ -430,20 +430,20 @@ App = {
           this.totalref = parseInt(totalr);
           // console.log({totalref});
       }).catch(err => console.error(err));
-      this.sleep(500);
+      //this.sleep(500);
 
       myContract.subtracttime().call().then(timep => {
           this.timepay = parseInt(timep);
           // console.log({timepay});
       }).catch(err => console.error(err));
-      this.sleep(500);
+      //this.sleep(500);
       
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
           $("#withdwn").text(withdrawn/1000000);
           // console.log({withdrawn});
       }).catch(err => console.error(err));
-      await this.sleep(500);
+      //await this.sleep(500);
 
       myContract.totalinvested().call().then(totalinvestedUs => {
           this.totalinvestedUser = totalinvestedUs;
@@ -474,7 +474,7 @@ App = {
       }
     }
     
-    setInterval(refrescar, 1000)
+    setInterval(refrescar, 3000)
     
   },
 
