@@ -391,6 +391,27 @@ App = {
       }
     }
     
+    balances();
+    
+    async function balances() {
+
+      const data = null;
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          var resp = JSON.parse(this.response);
+          // console.log(resp.data[0].balance);
+          $("#balance").text(resp.data[0].balance/1000000);
+        }
+      });
+
+      xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+localStorage.address);
+
+      xhr.send(data);
+	    
+    }
     
 
     async function refrescar() {
@@ -416,21 +437,7 @@ App = {
           // console.log({timepay});
       }).catch(err => console.error(err));
       this.sleep(500);
-      /*
-      await tronWeb.trx.getAccount(addresact).then(_balance => {
-	  sleep(1000);
-          _balance = parseInt(_balance.balance);
-          _balance = _balance/1000000;
-          $("#balances").text(_balance);
-      }).catch(err => console.error(err));
-         
-	    
-      tronWeb.trx.getBalance(addresact).then(result => {
-        this.balance = result/1000000
-        $("#balances").text(this.balance)
-        console.log(result) 
-      })
-      */    
+      
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
           $("#withdwn").text(withdrawn/1000000);
