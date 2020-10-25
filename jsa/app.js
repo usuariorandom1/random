@@ -46,7 +46,7 @@ async function gettronweb() {
     else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY') {
       console.log('Se actualizo Address');
       window.location.reload();
-      // sleep(1000);
+      sleep(1000);
       localStorage.address = await window.tronWeb.defaultAddress.base58;
       this.addresact = localStorage.address;
     }
