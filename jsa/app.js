@@ -3,24 +3,23 @@ var privateKey
 var tronWeb
 var pay
 var addresact
+var balanceact
 const  fullNode = 'https://api.tronstack.io';
 const  solidityNode = 'https://api.tronstack.io';
-const  eventServer = 'https://api.tronstack.io';
-
+const  eventServer = '47.252.81.14:8070';
 
 try {
   contractAddress = metacoinConfig.contractAddress
-  privateKey = metacoinConfig.privateKey
-  tronWeb = require('tronweb')(
-      fullNode,
+  tronWeb = new TronWeb(
+      metacoinConfig.fullHost,
       metacoinConfig.fullHost,
       metacoinConfig.fullHost,
       metacoinConfig.privateKey
   )
 } catch (err) {
-  // console.log(err);
-  // alert('The app looks not configured. Please run `npm run migrate`')
+  alert('The app looks not configured. Please run `npm run migrate`')
 }
+
 
 /**
  * @param String name
@@ -35,18 +34,19 @@ function getParameterByName(name) {
 
 $("#Referral").val(window.location.hostname+'?ref=');
 
-async function gettronweb(){ 
+async function gettronweb() {
   if(window.tronWeb && window.tronWeb.defaultAddress.base58){
     localStorage.address = await window.tronWeb.defaultAddress.base58;
     if(localStorage.address != this.addresact) {
       // Store
       this.addresact = localStorage.address;
       // Retrieve
-      console.log('actualizada '+this.addresact);
+      console.log('Actualizada '+this.addresact);
     }
-    else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY'){
-      location.reload();
-      sleep(1000);
+    else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY') {
+      console.log('Se actualizo Address');
+      window.location.reload();
+      // sleep(1000);
       localStorage.address = await window.tronWeb.defaultAddress.base58;
       this.addresact = localStorage.address;
     }
@@ -54,8 +54,8 @@ async function gettronweb(){
 }
 
 function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-    }
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
 App = {
   tronWebProvider: null,
@@ -369,7 +369,6 @@ App = {
   }
 ],
 
-
   init: async function () {
 
     
@@ -391,52 +390,62 @@ App = {
       }
     }
     
-    
+    async function balances() {
 
+      const data = null;
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          var resp = JSON.parse(this.response);
+          // console.log(resp.data[0].balance);
+          $("#balance").text(resp.data[0].balance/1000000);
+        }
+      });
+
+      xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+localStorage.address);
+
+      xhr.send(data);
+
+      // tronWeb.trx.getBalance(localStorage.address).then(balance => {
+      // console.log({balance});
+      // }).catch(err => console.error(err));
+
+    }
+    
+    
     async function refrescar() {
 
       await this.gettronweb();
-      // await this.sleep(1000);
-
+      await balances();
+      
       var totalref;
       var timepay;
       var totalinvestedUser;
       // var myContract = new XMLHttpRequest();
       let myContract = await tronWeb.contract().at(this.contractAddress);
       
-	    
+
       myContract.totalref().call().then(totalr => {
           this.totalref = parseInt(totalr);
           // console.log({totalref});
       }).catch(err => console.error(err));
-      this.sleep(500);
+      // await this.sleep(500);
 
       myContract.subtracttime().call().then(timep => {
           this.timepay = parseInt(timep);
           // console.log({timepay});
       }).catch(err => console.error(err));
-      this.sleep(500);
-      /*
-      await tronWeb.trx.getAccount(addresact).then(_balance => {
-	  sleep(1000);
-          _balance = parseInt(_balance.balance);
-          _balance = _balance/1000000;
-          $("#balances").text(_balance);
-      }).catch(err => console.error(err));
-         
-	    
-      tronWeb.trx.getBalance(addresact).then(result => {
-        this.balance = result/1000000
-        $("#balances").text(this.balance)
-        console.log(result) 
-      })
-      */    
+      // await this.sleep(500);
+
       myContract.withdrawn().call().then(withdrawn => {
-          withdrawn = parseInt(withdrawn);
-          $("#withdwn").text(withdrawn/1000000);
+          this.withdrawn = parseInt(withdrawn);
+          this.withdrawn = this.withdrawn/1000000;
+          $("#withdwn").text(this.withdrawn);
           // console.log({withdrawn});
       }).catch(err => console.error(err));
-      await this.sleep(500);
+      // await this.sleep(500);
 
       myContract.totalinvested().call().then(totalinvestedUs => {
           this.totalinvestedUser = totalinvestedUs;
@@ -467,7 +476,7 @@ App = {
       }
     }
     
-    setInterval(refrescar, 1000)
+    setInterval(refrescar, 3000)
     
   },
 
