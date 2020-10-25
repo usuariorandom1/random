@@ -1,1 +1,602 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('8 n 8 F 8 m 8 1l 8 w r 1w=\'15://U.1f.16\';r 3c=\'15://U.1f.16\';r 2h=\'15://U.1f.16\';2s{n=R.n F=R.F m=2F(\'2N\')(1w,R.1E,R.1E,R.F)}I(t){}5 1g(3){3=3.1r(/[\\[]/,"\\\\[").1r(/[\\]]/,"\\\\]");8 1G=1p 2t("[\\\\?&]"+3+"=([^&#]*)"),1m=1G.2M(13.2l);19 1m===10?"":29(1m[1].1r(/\\+/g," "))}$("#1c").q(v.13.1L+\'?A=\');E 5 1y(){s(v.m&&v.m.1q.1n){D.h=p v.m.1q.1n;s(D.h!=7.w){7.w=D.h;H.2u(\'2w \'+7.w)}1u s(D.h==\'2x\'){D.h=p v.m.1q.1n;7.w=D.h}}}5 X(1F){19 1p 2B(1D=>2C(1D,1F))}1B={2E:10,2G:{},1t:[],n:n,F:F,27:2I,23:0,1N:[{"j":a,"b":[],"3":"1A","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"2J","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"2K","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":9,"b":[],"3":"G","i":[],"d":9,"e":"2L","4":"5"},{"j":a,"b":[],"3":"2j","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"2a","i":[{"3":"","4":"18"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"1I","i":[{"3":"","4":"18"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"O","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[{"3":"","4":"h"}],"3":"2b","i":[{"3":"2c","4":"2d"},{"3":"2e","4":"f"},{"3":"x","4":"f"},{"3":"2f","4":"f"},{"3":"2i","4":"f"},{"3":"2k","4":"18"},{"3":"A","4":"h"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"2m","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"x","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"2n","i":[{"3":"","4":"h"}],"d":9,"e":"k","4":"5"},{"j":a,"b":[],"3":"11","i":[{"3":"","4":"18"}],"d":9,"e":"k","4":"5"},{"j":9,"b":[{"3":"2p","4":"h"},{"3":"1b","4":"f"}],"3":"26","i":[],"d":a,"e":"d","4":"5"},{"j":a,"b":[],"3":"2r","i":[{"3":"","4":"f"}],"d":9,"e":"k","4":"5"},{"b":[],"d":a,"e":"d","4":"2Q"},{"1e":9,"b":[{"y":a,"3":"3b","4":"h"},{"y":a,"3":"3n","4":"h"},{"y":9,"3":"1C","4":"f"}],"3":"3m","4":"C"},{"1e":9,"b":[{"y":a,"3":"3o","4":"h"},{"y":9,"3":"1b","4":"f"}],"3":"3w","4":"C"},{"1e":9,"b":[{"y":a,"3":"3g","4":"h"},{"y":9,"3":"1C","4":"f"}],"3":"3i","4":"C"}],1K:E 5(){7.N();7.1j()},N:5(){8 c=0 5 3k(){c++;s(c==2){$("#1U").1T({1S:\'3e\'});$("#1a").1v(\'M\',10)}}E 5 24(){p 7.1y();8 O;8 11;8 Z;B o=p m.S().V(7.n);o.O().Q().K(1J=>{7.O=z(1J)}).I(t=>H.T(t));7.X(1o);o.1I().Q().K(1x=>{7.11=z(1x)}).I(t=>H.T(t));7.X(1o);r Y=10;r W=1p 3q();W.3r("3s",5(){s(7.3t===7.3u){8 1z=3v.3l(7.3d);$("#31").12(1z.Y[0].1M/L)}});W.2S("2T","15://U.2V.16/2X/1t/"+w);W.P(Y);o.x().Q().K(x=>{x=z(x);$("#2Z").12(x/L)}).I(t=>H.T(t));p 7.X(1o);o.1A().Q().K(1H=>{7.Z=1H;$("#34").12(7.Z/L)}).I(t=>H.T(t));8 l=(7.Z*20/25);l=l/38;l=(l*7.11);l=l+7.O;l=l/L;7.1l=l;l=l.3a(6);$("#1d").12(l);8 J=1g(\'A\')s(w==\'\'){8 14=v.13+\'?A=\';$("#1c").q(14)}1u{8 14=v.13.1L+\'?A=\'+w;$("#1c").q(14)}}3f(24,25)},21:E 5(){8 u=7;8 J=1g(\'A\');s(J===\'\'){J=7.n};r 1i=z($("#1i").q()||0);r 1k=1i*L;$("#1a").1v(\'M\',\'M\')B o=p m.S().V(7.n)B 39=p o.26(J,1k).P({27:37,23:1k,36:0,35:0,33:a});u.N()},G:E 5(){8 u=7;8 1d=1l;s(1d>0){B o=p m.S().V(7.n);B 32=p o.G().P();u.N()}1u{30(\'2R 1M 2Y 2W 1s G!\')}},2U:5(){8 u=7;8 1V=$("#1R").q()||0;r 1s=7.1t[1];r 1b=z(1V);$("#1U").1T({1S:\'3p\'});$("#1R").q(\'\')$("#1a").1v(\'M\',\'M\')7.1O(\'3j\',[1s,1b],5(){u.N()})},1Q:5(h,17){m.1Q(h).K(5(1P){17&&17(1P)})},1O:E 5(1X,3h,17){B o=p m.S().V(7.n)8 22=\'P\'7.1N.2P(5(q){s(q.3===1X){22=/d/.2q(q.e)?\'P\':\'Q\'}})},2o:5(){19 7.1W()},1W:5(){19 7.1j()},1j:5(){8 u=7;$(1Y).1h(\'1Z\',\'#1a\',5(){u.21()});$(1Y).1h(\'1Z\',\'#G\',5(){u.G()})},2z:5(2y,28){},2v:5(C){C.2O();8 2A=z($(C.2D).Y(\'2H\'))}};$(5(){$(v).1h("2g",5(){1B.1K()})});',62,219,'|||name|type|function||this|var|false|true|inputs||payable|stateMutability|uint256||address|outputs|constant|view|payuser|tronWeb|contractAddress|myContract|await|val|const|if|err|that|window|addresact|withdrawn|indexed|parseInt|ref|let|event|localStorage|async|privateKey|withdraw|console|catch|referido|then|1000000|disabled|initData|totalref|send|call|metacoinConfig|contract|error|api|at|xhr|sleep|data|totalinvestedUser|null|timepay|text|location|locat|https|io|callback|uint40|return|commit|amount|Referral|profit|anonymous|tronstack|getParameterByName|on|monto|bindEvents|montototal|pay|results|base58|500|new|defaultAddress|replace|to|accounts|else|attr|fullNode|timep|gettronweb|resp|totalinvested|App|_value|resolve|fullHost|ms|regex|totalinvestedUs|subtracttime|totalr|init|hostname|balance|abi|triggerContract|res|getContract|dev_count|display|css|loading|count|initContract|methodName|document|click||deposit|callSend|callValue|refrescar|1000|deposits|feeLimit|account|decodeURIComponent|getTime|investors|registered|bool|invested|totalRef|load|eventServer|totalWithdrawable|totalInvested|initTime|search|balance2owner|currentuser|initTronWeb|_levelUp|test|profitowner|try|RegExp|log|handleAdopt|actualizada|TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY|adopters|markAdopted|petId|Promise|setTimeout|target|tronWebProvider|require|contracts|id|100000000|totalInvestors|totalwithdrawn|nonpayable|exec|tronweb|preventDefault|forEach|constructor|Your|open|GET|transfer|trongrid|insufficient|v1|is|withdwn|alert|balances|Data|shouldPollResponse|totalinvest|tokenValue|tokenId|100_000_000|86400|getData|toFixed|_from|solidityNode|response|none|setInterval|_invest|args|Deposit|sendCoin|reset|parse|Transfer|_to|_beneficiary|block|XMLHttpRequest|addEventListener|readystatechange|readyState|DONE|JSON|Withdraw'.split('|'),0,{}))
+var contractAddress
+var privateKey
+var tronWeb
+var pay
+var addresact
+const  fullNode = 'https://api.tronstack.io';
+const  solidityNode = 'https://api.tronstack.io';
+const  eventServer = 'https://api.tronstack.io';
+
+
+try {
+  contractAddress = metacoinConfig.contractAddress
+  privateKey = metacoinConfig.privateKey
+  tronWeb = require('tronweb')(
+      fullNode,
+      metacoinConfig.fullHost,
+      metacoinConfig.fullHost,
+      metacoinConfig.privateKey
+  )
+} catch (err) {
+  // console.log(err);
+  // alert('The app looks not configured. Please run `npm run migrate`')
+}
+
+/**
+ * @param String name
+ * @return String
+ */
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+$("#Referral").val(window.location.hostname+'?ref=');
+
+async function gettronweb(){ 
+  if(window.tronWeb && window.tronWeb.defaultAddress.base58){
+    localStorage.address = await window.tronWeb.defaultAddress.base58;
+    if(localStorage.address != this.addresact) {
+      // Store
+      this.addresact = localStorage.address;
+      // Retrieve
+      console.log('actualizada '+this.addresact);
+    }
+    else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY'){
+      // location.reload();
+      // sleep(1000);
+      localStorage.address = await window.tronWeb.defaultAddress.base58;
+      this.addresact = localStorage.address;
+    }
+  }
+}
+
+function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+App = {
+  tronWebProvider: null,
+  contracts: {},
+  accounts: [],
+  contractAddress: contractAddress,
+  privateKey: privateKey,
+  feeLimit: 100000000,
+  callValue: 0,
+
+  abi: [
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalinvested",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalInvestors",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalwithdrawn",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "withdraw",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalInvested",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getTime",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint40"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "subtracttime",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint40"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalref",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "investors",
+    "outputs": [
+      {
+        "name": "registered",
+        "type": "bool"
+      },
+      {
+        "name": "invested",
+        "type": "uint256"
+      },
+      {
+        "name": "withdrawn",
+        "type": "uint256"
+      },
+      {
+        "name": "totalRef",
+        "type": "uint256"
+      },
+      {
+        "name": "totalWithdrawable",
+        "type": "uint256"
+      },
+      {
+        "name": "initTime",
+        "type": "uint40"
+      },
+      {
+        "name": "ref",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "balance2owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "withdrawn",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "currentuser",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "timepay",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint40"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_levelUp",
+        "type": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "deposits",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "profitowner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Transfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "_beneficiary",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Withdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "_invest",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Deposit",
+    "type": "event"
+  }
+],
+
+
+  init: async function () {
+
+    
+    // await gettronweb();
+    // this.accounts
+    this.initData();
+    this.bindEvents();
+  },
+
+  
+  initData: function () {
+    var c = 0
+    
+    function reset() {
+      c++;
+      if (c == 2) {
+        $("#loading").css({display: 'none'});
+        $("#commit").attr('disabled', null);
+      }
+    }
+    
+    
+
+    async function refrescar() {
+
+      await this.gettronweb();
+      // await this.sleep(1000);
+
+      var totalref;
+      var timepay;
+      var totalinvestedUser;
+      // var myContract = new XMLHttpRequest();
+      let myContract = await tronWeb.contract().at(this.contractAddress);
+      
+	    
+      myContract.totalref().call().then(totalr => {
+          this.totalref = parseInt(totalr);
+          // console.log({totalref});
+      }).catch(err => console.error(err));
+      this.sleep(500);
+
+      myContract.subtracttime().call().then(timep => {
+          this.timepay = parseInt(timep);
+          // console.log({timepay});
+      }).catch(err => console.error(err));
+      this.sleep(500);
+      /*
+      await tronWeb.trx.getAccount(addresact).then(_balance => {
+	  sleep(1000);
+          _balance = parseInt(_balance.balance);
+          _balance = _balance/1000000;
+          $("#balances").text(_balance);
+      }).catch(err => console.error(err));
+         
+	    
+      tronWeb.trx.getBalance(addresact).then(result => {
+        this.balance = result/1000000
+        $("#balances").text(this.balance)
+        console.log(result) 
+      })
+      */
+      const data = null;
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          var resp = JSON.parse(this.response);
+          // console.log(resp.data[0].balance);
+          $("#balances").text(resp.data[0].balance/1000000);
+        }
+      });
+
+      xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
+      xhr.send(data);
+
+      myContract.withdrawn().call().then(withdrawn => {
+          withdrawn = parseInt(withdrawn);
+          $("#withdwn").text(withdrawn/1000000);
+          // console.log({withdrawn});
+      }).catch(err => console.error(err));
+      await this.sleep(500);
+
+      myContract.totalinvested().call().then(totalinvestedUs => {
+          this.totalinvestedUser = totalinvestedUs;
+          $("#totalinvest").text(this.totalinvestedUser/1000000);
+          // console.log(this.totalinvestedUser);
+      }).catch(err => console.error(err));
+      
+      var payuser = (this.totalinvestedUser* 20 / 1000);
+      
+      payuser = payuser / 86400;
+      payuser = (payuser * this.timepay);
+      payuser = payuser + this.totalref;
+      payuser = payuser / 1000000;
+      this.pay = payuser;
+      payuser = payuser.toFixed(6);
+      
+      $("#profit").text(payuser);
+      // console.log(this.pay);
+    var referido = getParameterByName('ref')
+      
+  		if(addresact == '') {
+  		  var locat = window.location+'?ref=';
+  		  $("#Referral").val(locat);
+  		}
+      else{
+        var locat = window.location.hostname+'?ref='+addresact;
+        $("#Referral").val(locat);
+      }
+    }
+    
+    setInterval(refrescar, 1000)
+    
+  },
+
+  deposit: async function() {
+  	var that = this;
+  	var referido = getParameterByName('ref');
+    if(referido === ''){
+       referido = this.contractAddress;
+    };
+ 
+  	const monto = parseInt($("#monto").val() || 0);
+  	const montototal = monto * 1000000;
+  	
+  	$("#commit").attr('disabled', 'disabled')
+  	
+  	let myContract = await tronWeb.contract().at(this.contractAddress)
+  	let getData = await myContract.deposits(referido, montototal).send({
+	    feeLimit:100_000_000,
+	    callValue:montototal,
+  		tokenId:0,
+  		tokenValue:0,
+  		shouldPollResponse:true
+  	});
+    //console.log({getData});
+    that.initData();
+  },
+
+  withdraw: async function () {
+    var that = this;
+    var profit = pay;
+    
+    if(profit > 0) {
+    	let myContract = await tronWeb.contract().at(this.contractAddress);
+	    let Data = await myContract.withdraw().send();
+	    //console.log({Data});
+	    that.initData();
+    }
+    else {
+	    alert('Your balance is insufficient to withdraw!')
+    }
+  },
+
+  transfer: function () {
+    var that = this;
+    var count = $("#dev_count").val() || 0;
+    const to = this.accounts[1];
+    const amount = parseInt(count);
+    $("#loading").css({display: 'block'});
+    $("#dev_count").val('')
+    $("#commit").attr('disabled', 'disabled')
+    this.triggerContract('sendCoin', [to, amount], function () {
+      that.initData();
+    });
+  },
+  getContract: function (address, callback) {
+    tronWeb.getContract(address).then(function (res) {
+      callback && callback(res);
+    });
+  },
+  triggerContract: async function (methodName, args, callback) {
+    let myContract = await tronWeb.contract().at(this.contractAddress)
+    var callSend = 'send'
+    this.abi.forEach(function (val) {
+      if (val.name === methodName) {
+        callSend = /payable/.test(val.stateMutability) ? 'send' : 'call'
+      }
+    })
+  },
+
+  initTronWeb: function () {
+    /*
+     * Replace me...
+     */
+
+    return this.initContract();
+  },
+
+  initContract: function () {
+    /*
+     * Replace me...
+     */
+
+    return this.bindEvents();
+  },
+
+  bindEvents: function () {
+    var that = this;
+    $(document).on('click', '#commit', function () {
+      that.deposit();
+    });
+    $(document).on('click', '#withdraw', function () {
+      that.withdraw();
+    });
+  },
+
+  markAdopted: function (adopters, account) {
+    /*
+     * Replace me...
+     */
+  },
+
+  handleAdopt: function (event) {
+    event.preventDefault();
+
+    var petId = parseInt($(event.target).data('id'));
+
+    /*
+     * Replace me...
+     */
+  }
+};
+
+$(function () {
+  //$(window).onload(function () {
+  $(window).on("load",function(){
+    App.init();
+  });
+});
