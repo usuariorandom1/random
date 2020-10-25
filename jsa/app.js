@@ -17,7 +17,7 @@ try {
       metacoinConfig.privateKey
   )
 } catch (err) {
-  alert('The app looks not configured. Please run `npm run migrate`')
+  //alert('The app looks not configured. Please run `npm run migrate`')
 }
 
 
