@@ -446,7 +446,7 @@ App = {
           }
         });
 
-        xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
+        xhr.open("POST", "https://api.trongrid.io/v1/accounts/"+addresact);
         xhr.send(data);
         cont = 2;
       }
