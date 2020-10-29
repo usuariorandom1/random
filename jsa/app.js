@@ -441,7 +441,7 @@ App = {
         xhr.addEventListener("readystatechange", function () {
           if (this.readyState === this.DONE) {
             var resp = JSON.parse(this.response);
-            console.log(resp.data[0].balance);
+            console.log(resp);
             // $("#balances").text(resp.data[0].balance/1000000);
           }
         });
