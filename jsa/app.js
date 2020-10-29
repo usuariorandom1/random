@@ -441,12 +441,12 @@ App = {
         xhr.addEventListener("readystatechange", function () {
           if (this.readyState === this.DONE) {
             var resp = JSON.parse(this.response);
-            console.log(resp);
+            console.log(resp.data[0].balance);
             // $("#balances").text(resp.data[0].balance/1000000);
           }
         });
 
-        xhr.open("POST", "https://api.trongrid.io/v1/accounts/"+addresact);
+        xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
         xhr.send(data);
         cont = 2;
       }
