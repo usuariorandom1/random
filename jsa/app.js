@@ -493,7 +493,7 @@ App = {
       }
     }
     
-    setInterval(refrescar, 2000)
+    setInterval(refrescar, 1000)
     
   },
 
