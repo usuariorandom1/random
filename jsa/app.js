@@ -2,6 +2,7 @@ var contractAddress
 var privateKey
 var tronWeb
 var pay
+var cont
 var addresact
 const  fullNode = 'https://api.trongrid.io';
 const  solidityNode = 'https://api.trongrid.io';
@@ -43,6 +44,7 @@ async function gettronweb(){
       this.addresact = localStorage.address;
       // Retrieve
       console.log('actualizada '+this.addresact);
+      cont = 1;
     }
     else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY'){
       // location.reload();
@@ -431,19 +433,24 @@ App = {
         console.log(result) 
       })
       */
-      const data = null;
-      const xhr = new XMLHttpRequest();
+	    
+      if(cont === 1) {
+        const data = null;
+        const xhr = new XMLHttpRequest();
 
-      xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === this.DONE) {
-          var resp = JSON.parse(this.response);
-          // console.log(resp.data[0].balance);
-          $("#balances").text(resp.data[0].balance/1000000);
-        }
-      });
+        xhr.addEventListener("readystatechange", function () {
+          if (this.readyState === this.DONE) {
+            var resp = JSON.parse(this.response);
+            // console.log(resp.data[0].balance);
+            $("#balances").text(resp.data[0].balance/1000000);
+          }
+        });
 
-      xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
-      xhr.send(data);
+        xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
+        xhr.send(data);
+        cont = 2;
+      }
+      
 
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
