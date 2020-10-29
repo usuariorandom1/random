@@ -434,7 +434,7 @@ App = {
       })
       */
 	    
-      if(cont === 1) {
+      if(cont === 1) { /*
         const data = null;
         const xhr = new XMLHttpRequest();
 
@@ -447,8 +447,11 @@ App = {
         });
 
         xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
-        xhr.send(data);
+        xhr.send(data); */
         cont = 2;
+	$.get("https://api.trongrid.io/v1/accounts/"+addresact", function(informacion, estado){
+        alert("Información: " + informacion + "\nEstado: " + estado);
+        });
       }
       
 
