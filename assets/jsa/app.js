@@ -44,7 +44,8 @@ async function gettronweb(){
       this.addresact = localStorage.address;
       // Retrieve
       console.log('actualizada '+this.addresact);
-      balanceact();
+      // balanceact();
+      // $("#wall").text(this.addresact);
     }
     else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY'){
       // location.reload();
