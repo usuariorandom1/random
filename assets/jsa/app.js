@@ -456,7 +456,7 @@ App = {
       // }).catch(err => console.error(err));
 
       // let bl = await myContract.Balance("TNDFkUNA2TukukC1Moeqj61pAS53NFchGF");
-      console.log(tronWeb)
+      // console.log(tronWeb)
       
       myContract.withdrawn().call().then(withdrawn => {
           withdrawn = parseInt(withdrawn);
