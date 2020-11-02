@@ -44,7 +44,7 @@ async function gettronweb(){
       this.addresact = localStorage.address;
       // Retrieve
       console.log('actualizada '+this.addresact);
-      // balanceact();
+      balanceact();
       // $("#wall").text(this.addresact);
     }
     else if(localStorage.address == 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY'){
@@ -68,25 +68,45 @@ function sleep(ms) {
     }
 
 function balanceact() {
-	// const data = null;
-	// const xhr = new XMLHttpRequest();
+	let data = null;
+	let xhr = new XMLHttpRequest();
+    
+	xhr.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+	  var resp = JSON.parse(this.response);
+	  // console.log(resp);
+	  if(resp.data[0].balance) {
+	  	$("#balances").text(resp.data[0].balance/1000000);
+	  }
+	  else {
+	  	$("#balances").text(0);
+	  }
+	}
+	});
 
-	// xhr.addEventListener("readystatechange", function () {
-	// if (this.readyState === this.DONE) {
-	//   var resp = JSON.parse(this.response);
-	//   // console.log(resp.data[0].balance);
-	//   $("#balances").text(resp.data[0].balance/1000000);
-	// }
-	// });
-	// xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
-    // xhr.send(data);
+	xhr.open("GET", "https://api.trongrid.io/v1/accounts/"+addresact);
+	// xhr.withCredentials = true;
+	xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(data);
 
     // tronWeb.trx.getBalance(addresact).then(result => {
     //     this.balance = result/1000000
     //     $("#balances").text(this.balance)
     //     console.log(result) 
     //   })
-}
+
+	// var request = $.ajax({
+	// url: "https://swapi.co/api/people/",
+	// method: "GET"
+	// });
+	// request.done(function( data ) {
+	//     console.log(data);
+	// });
+	  
+	// request.fail(function( error ) {
+	//     console.log( 'Error: ' , error );
+	// });
+	}
 
 App = {
   tronWebProvider: null,
@@ -433,7 +453,7 @@ App = {
       var timepay;
       var totalinvestedUser;
       // var myContract = new XMLHttpRequest();
-      let myContract = await tronWeb.contract().at(this.contractAddress);
+      const myContract = await tronWeb.contract().at(this.contractAddress);
       
 	    
       myContract.totalref().call().then(totalr => {
